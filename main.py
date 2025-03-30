@@ -25,22 +25,38 @@ st.markdown("---")
 if st.button("Soumettre le formulaire"):
     st.success("Formulaire soumis ! (Voir les logs ci-dessous)")
 
-    st.write("## Résumé")
+    objectifs = form_data["objectifs"]
+    contraintes = form_data["contraintes"]
 
-    st.write("### OpenAI Key")
-    st.code(openai_key or "Non fourni", language='text')
+    # --- Build prompt ---
+    prompt_lines = []
+    prompt_lines.append("A user wants a restructuration of his company.")
+    
+    prompt_lines.append("\nThese are his goals:")
+    for key, val in objectifs.items():
+        question = key.capitalize().replace("_", " ")
+        prompt_lines.append(f"- {question}: {val.strip() or 'No answer provided'}")
 
-    st.write("### Society.com Key")
-    st.code(society_key or "Non fourni", language='text')
+    prompt_lines.append("\nThese are his constraints:")
+    for key, val in contraintes.items():
+        question = key.capitalize().replace("_", " ")
+        prompt_lines.append(f"- {question}: {val.strip() or 'No answer provided'}")
 
-    st.write("### Dirigeant ID")
-    st.code(dirigeant_id or "Non fourni", language='text')
+    if selected_mandats:
+        prompt_lines.append("\nThese are his current companies:")
+        for mandat in selected_mandats:
+            prompt_lines.append(
+                f"- {mandat.get('denomination', 'N/A')} ({mandat.get('ville', '')}) - "
+                f"{mandat.get('activitelibelle', '')} | SIREN: {mandat.get('siren', '')}"
+            )
+    else:
+        prompt_lines.append("\nThe user has selected no current companies.")
 
-    st.write("### Mandats sélectionnés")
-    st.json(selected_mandats)
+    final_prompt = "\n".join(prompt_lines)
 
-    st.write("### Objectifs")
-    st.json(form_data["objectifs"])
+    # --- Log Everything ---
+    st.write("### OpenAI Key (for future use)")
+    st.code(openai_key or "Not provided", language="text")
 
-    st.write("### Contraintes")
-    st.json(form_data["contraintes"])
+    st.write("### Final Prompt to send to ChatGPT")
+    st.code(final_prompt, language="markdown")
