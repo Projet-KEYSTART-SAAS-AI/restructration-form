@@ -1,0 +1,71 @@
+{
+    "data": {
+        "versioncourante": "1",
+        "liendocversioncourante": "https://api.societe.com/apisite/documentations/v1/documentation-api.html",
+        "derniereversion": "1",
+        "liendocderniereversion": "https://api.societe.com/apisite/documentations/v1/documentation-api.html",
+        "civilite": "M",
+        "nom": "LAROSE",
+        "prenom": "Vincent",
+        "datenaissance": "19690709",
+        "url": "https://www.societe.com/manager/Vincent.LAROSE.sYkMk9_sTEQ.html",
+        "nbmandats": 2,
+        "mandats": [
+            {
+                "codefonction": "0200",
+                "fonctionlibelle": "Gérant",
+                "siren": "793848193",
+                "denomination": "SPFL",
+                "codepostal": "92000",
+                "ville": "NANTERRE",
+                "activite": "6420Z",
+                "activitelibelle": "Activités des sociétés holding",
+                "url": "https://www.societe.com/societe/spfl-793848193.html",
+                "bilan": {
+                    "datedernierbilan": 2023,
+                    "monnaie": "EU",
+                    "resnet": 461200,
+                    "ca": 132000,
+                    "eff": 0
+                }
+            },
+            {
+                "codefonction": "0200",
+                "fonctionlibelle": "Gérant",
+                "siren": "424540441",
+                "denomination": "PROXIMUM 365",
+                "codepostal": "92150",
+                "ville": "SURESNES",
+                "activite": "8230Z",
+                "activitelibelle": "Organisation de foires, salons professionnels et congrès",
+                "url": "https://www.societe.com/societe/proximum-365-424540441.html",
+                "bilan": {
+                    "datedernierbilan": 2022,
+                    "monnaie": "EU",
+                    "resnet": 110400,
+                    "ca": 5359000,
+                    "eff": 0
+                }
+            }
+        ],
+        "nbcomandataires": 2,
+        "comandataires": [
+            {
+                "civilite": "M",
+                "nom": "SIMARD",
+                "prenom": "Renaud",
+                "datenaissance": "19720405",
+                "url": "https://www.societe.com/manager/Renaud.SIMARD.wHrI_Syr2LC.html",
+                "nbmandats": 6
+            },
+            {
+                "civilite": "M",
+                "nom": "LECLERC",
+                "prenom": "Philippe",
+                "datenaissance": "19670929",
+                "url": "https://www.societe.com/manager/Philippe.LECLERC.1DsQbi29FoJ.html",
+                "nbmandats": 3
+            }
+        ]
+    }
+}
