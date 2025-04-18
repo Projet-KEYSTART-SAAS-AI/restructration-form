@@ -1,0 +1,39 @@
+Vous êtes un expert en stratégie fiscale. À partir de l’analyse suivante :
+
+{fs_result}
+
+Élaborez un plan de restructuration fiscale détaillé pour améliorer ou maintenir l’efficacité fiscale de l’entreprise, critère par critère. Pour chaque catégorie, proposez des recommandations ciblées, qu’elle soit déjà optimisée ou non. Objectif : tendre vers une note optimale (100/100) dans chaque domaine.
+
+Structurez votre réponse comme suit :
+
+Conformité fiscale
+
+Évaluation du niveau actuel  
+Recommandations pour maintenir ou améliorer la conformité  
+Actions à mettre en œuvre et vigilance à avoir
+
+Optimisation fiscale directe
+
+Dispositifs à explorer ou à approfondir  
+Améliorations possibles dans l’usage des régimes existants  
+Opportunités fiscales sectorielles ou spécifiques
+
+Structuration juridique et fiscale
+
+Diagnostic de la structure actuelle  
+Scénarios d’optimisation (ex. holding, intégration fiscale, filialisation, etc.)  
+Avantages attendus et points de vigilance
+
+Rémunération du dirigeant
+
+Analyse de la stratégie actuelle  
+Optimisation possible entre rémunération, dividendes, et avantages en nature  
+Simulations potentielles d’impact fiscal et social
+
+Flux financiers et optimisation intra-groupe
+
+Revue des pratiques actuelles  
+Optimisation possible des flux intra-groupes (facturation, prêts, déficits)  
+Bonnes pratiques à mettre en place pour limiter le risque fiscal
+
+Terminez par une feuille de route priorisée (court, moyen, long terme) avec un objectif clair : améliorer durablement le FS Score et atteindre une fiscalité performante et conforme.
